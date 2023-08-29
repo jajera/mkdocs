@@ -1,0 +1,19 @@
+name: markdown-lint
+on:
+  push:
+    branches:
+      - '*'
+      - '!gh-pages'
+      - '!main'
+  pull_request:
+    branches:
+      - '*'
+      - '!gh-pages'
+permissions:
+  statuses: write
+  checks: write
+  contents: read
+  pull-requests: read
+jobs:
+  markdown-lint:
+    uses: platformfuzz/actions/.github/workflows/markdown-lint.yml@main

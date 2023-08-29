@@ -13,3 +13,11 @@ markdown_extensions:
 
 extra_css:
   - css/neoteroi-mkdocs.css
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+  - include_dir_to_nav

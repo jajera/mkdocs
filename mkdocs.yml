@@ -26,7 +26,7 @@ markdown_extensions:
     alternate_style: true
 
 plugins:
-  - include_dir_to_nav
+  - include_dir_to_nav:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
@@ -50,4 +50,7 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Docs:
+  - dirDirectRef
+  - SubDirDirectRef/SubDirDirectRefSub
+  - dirNamed: dirNamed
+  - emptyDir

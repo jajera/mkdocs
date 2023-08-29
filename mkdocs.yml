@@ -15,15 +15,21 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.keys
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-markdown_extensions:
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.tabbed:
-    alternate_style: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - include_dir_to_nav:
@@ -50,6 +56,8 @@ theme:
   palette:
       primary: 'indigo'
       accent: 'indigo'
+  features:
+    - content.code.copy
 
 extra_javascript:
     - 'javascripts/extra.js'

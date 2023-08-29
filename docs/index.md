@@ -6,5 +6,6 @@ This is my personal notes on technology related that I will come across.
 
     mkdocs.yml    # The configuration file.
     docs/
+        wiki/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.

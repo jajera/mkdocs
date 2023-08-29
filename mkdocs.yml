@@ -50,6 +50,8 @@ plugins:
       index_weight: -10
       warning: true
       reverse: false
+  - tags:
+      tags_pages_compare: !!python/name:material.plugins.tags.page_title
 
 theme:
   name: material

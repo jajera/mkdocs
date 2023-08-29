@@ -10,8 +10,8 @@ repo_url: https://github.com/jajera/mkdocs
 theme:
   name: material
   palette:
-      primary: 'red'
-      accent: 'red'
+      primary: 'indigo'
+      accent: 'indigo'
 
 markdown_extensions:
   - toc:

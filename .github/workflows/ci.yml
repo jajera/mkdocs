@@ -27,8 +27,8 @@ jobs:
             mkdocs-git-revision-date-localized-plugin \
             mkdocs-include-dir-to-nav \
             mkdocs-git-committers-plugin-2 \
-            mkdocs-rss-plugin \
             mkdocs-redirects \
+            mkdocs-pdf-export-plugin \
             mkdocs-material
 
       - run: mkdocs gh-deploy --force

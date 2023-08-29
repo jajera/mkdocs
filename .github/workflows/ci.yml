@@ -20,5 +20,15 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install pymdown-extensions mkdocs-minify-plugin mkdocs-git-revision-date-localized-plugin mkdocs-include-dir-to-nav mkdocs-material
+      - run: |
+          pip install \
+            pymdown-extensions \
+            mkdocs-minify-plugin \
+            mkdocs-git-revision-date-localized-plugin \
+            mkdocs-include-dir-to-nav \
+            mkdocs-git-committers-plugin-2 \         
+            mkdocs-rss-plugin \
+            mkdocs-redirects \
+            mkdocs-material
+
       - run: mkdocs gh-deploy --force

@@ -9,7 +9,6 @@ repo_url: https://github.com/jajera/mkdocs
 
 theme:
   name: material
-  custom_dir: material/.overrides
   features:
     - announce.dismiss
     - content.action.edit

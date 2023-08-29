@@ -53,3 +53,4 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Wiki: wiki

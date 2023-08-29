@@ -50,3 +50,4 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Docs:

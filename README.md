@@ -11,6 +11,7 @@ python3 -m  pip install \
             mkdocs-git-committers-plugin-2 \
             mkdocs-redirects \
             mkdocs-awesome-pages-plugin \
+            mkdocs-nav-weight \
             mkdocs-material
 ```
 

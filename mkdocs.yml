@@ -39,6 +39,11 @@ plugins:
   - awesome-pages:
       collapse_single_pages: true
       strict: false
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
 
 theme:
   name: material

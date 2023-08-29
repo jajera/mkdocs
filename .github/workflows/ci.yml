@@ -29,6 +29,7 @@ jobs:
             mkdocs-git-committers-plugin-2 \
             mkdocs-redirects \
             mkdocs-awesome-pages-plugin \
+            mkdocs-nav-weight \
             mkdocs-material
 
       - run: mkdocs gh-deploy --force

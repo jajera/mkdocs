@@ -1,22 +1,9 @@
 site_name: mkdocs
 site_url: https://jajera.github.io/mkdocs/
 site_author: John Ajera
-nav:
-  - Home: index.md
 
 repo_name: jajera/mkdocs
 repo_url: https://github.com/jajera/mkdocs
-
-theme:
-  name: material
-  palette:
-      primary: 'indigo'
-      accent: 'indigo'
-
-extra_javascript:
-    - 'javascripts/extra.js'
-extra_css:
-    - 'stylesheets/extra.css'
 
 markdown_extensions:
   - toc:
@@ -38,17 +25,28 @@ markdown_extensions:
 - pymdownx.tabbed:
     alternate_style: true
 
-# extra_css:
-#   - css/neoteroi-mkdocs.css
-
 plugins:
+  - include_dir_to_nav
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
   - git-revision-date-localized:
       fallback_to_build_date: true
-  - include_dir_to_nav
   - awesome-pages:
       collapse_single_pages: true
       strict: false
+
+theme:
+  name: material
+  palette:
+      primary: 'indigo'
+      accent: 'indigo'
+
+extra_javascript:
+    - 'javascripts/extra.js'
+extra_css:
+    - 'stylesheets/extra.css'
+
+nav:
+  - Home: index.md

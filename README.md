@@ -3,7 +3,15 @@
 ## To install MkDocs
 ```
 sudo apt install python3-pip
-python3 -m pip install mkdocs pymdown-extensions mkdocs-git-revision-date-localized-plugin mkdocs-include-dir-to-nav mkdocs-minify-plugin
+python3 -m  pip install \
+            pymdown-extensions \
+            mkdocs-minify-plugin \
+            mkdocs-git-revision-date-localized-plugin \
+            mkdocs-include-dir-to-nav \
+            mkdocs-git-committers-plugin-2 \
+            mkdocs-redirects \
+            mkdocs-awesome-pages-plugin \
+            mkdocs-material
 ```
 
 ## Create new project

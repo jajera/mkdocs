@@ -27,6 +27,9 @@ markdown_extensions:
 
 plugins:
   - include_dir_to_nav:
+      recurse: true
+      sort_file: true
+      sort_directory: true
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
@@ -50,7 +53,3 @@ extra_css:
 
 nav:
   - Home: index.md
-  - dirDirectRef
-  - SubDirDirectRef/SubDirDirectRefSub
-  - dirNamed: dirNamed
-  - emptyDir

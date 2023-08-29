@@ -1,8 +1,7 @@
-## Virtio-win install
+## pdk install
 ```
-wget https://apt.puppet.com/puppet-tools-release-jammy.deb
-sudo dpkg -i puppet-tools-release-jammy.deb
-sudo apt-get -y update
-sudo apt-get install -y pdk
-rm puppet-tools-release-jammy.deb
+sudo rpm -Uvh https://yum.puppet.com/puppet-tools-release-fedora-36.noarch.rpm
+sudo dnf install -y pdk
 ```
+
+<!-- pdk install ubuntu -->

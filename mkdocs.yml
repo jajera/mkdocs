@@ -1,6 +1,15 @@
 site_name: mkdocs
-site_url: https://example.com/
+site_url: https://jajera.github.io/mkdocs/
 nav:
   - Home: index.md
   - About: about.md
 theme: readthedocs
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - css/neoteroi-mkdocs.css

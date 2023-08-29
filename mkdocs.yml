@@ -90,11 +90,8 @@ plugins:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
-
-# plugins:
-#   - search
-#   - git-revision-date-localized:
-#       fallback_to_build_date: true
-#   - minify:
-#       minify_html: true
-#   - include_dir_to_nav
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+  - include_dir_to_nav

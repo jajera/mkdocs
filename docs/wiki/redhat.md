@@ -29,6 +29,11 @@ systemctl enable docker
 dnf install -y htop
 ```
 
+## netstat install (redhat)
+```no-highlight
+dnf install -y net-tools
+```
+
 ## powershell install (redhat 7)
 ```no-highlight
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc

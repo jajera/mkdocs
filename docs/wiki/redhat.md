@@ -67,6 +67,11 @@ subscription-manager attach --auto
 subscription-manager list --available --all
 ```
 
+## sync time with an ntp server (redhat)
+```no-highlight
+sudo ntpdate -q nz.pool.ntp.org
+```
+
 ## vcenter - vm template prerequisite install (redhat)
 ```no-highlight
 yum update

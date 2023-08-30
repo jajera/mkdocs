@@ -15,11 +15,6 @@ lvextend -l +100%FREE --resizefs /dev/mapper/rhel-root
 df -hT | grep mapper
 ```
 
-## htop install (redhat)
-```no-highlight
-dnf install -y htop
-```
-
 ## docker install (redhat)
 ```no-highlight
 yum install -y yum-utils
@@ -27,6 +22,11 @@ yum-config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce
 yum install -y docker-ce docker-ce-cli --nobest --allowerasing
 systemctl start docker
 systemctl enable docker
+```
+
+## htop install (redhat)
+```no-highlight
+dnf install -y htop
 ```
 
 ## powershell install (redhat 7)

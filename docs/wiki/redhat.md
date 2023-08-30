@@ -15,6 +15,11 @@ lvextend -l +100%FREE --resizefs /dev/mapper/rhel-root
 df -hT | grep mapper
 ```
 
+## htop install (redhat)
+```no-highlight
+dnf install -y htop
+```
+
 ## docker install (redhat)
 ```no-highlight
 yum install -y yum-utils

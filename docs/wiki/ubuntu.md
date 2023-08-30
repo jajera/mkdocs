@@ -4,8 +4,6 @@ apt-get update
 apt-get install -y ansible
 python3 -m pip install paramiko
 apt-get install python3-jmespath
-
-<!-- ubuntu ansible install -->
 ```
 
 ## autocomplete install (ubuntu)
@@ -13,8 +11,21 @@ apt-get install python3-jmespath
 apt-get update
 apt-get install -y bash-completion
 echo "source /etc/profile.d/bash_completion.sh" >> ~/.bashrc
+```
 
-<!-- ubuntu autocomplete install -->
+## azuure kubectl install (ubuntu)
+```no-highlight
+rm ~/.kube/config
+az aks get-credentials --resource-group rg1 --name aks1
+kubectl run -it --rm aks-ssh --namespace gitlab-runner --image=debian:stable
+apt-get update -y
+apt-get install dnsutils -y
+apt-get install curl -y
+apt-get install netcat -y
+apt-get install net-tools -y
+apt-get install traceroute -y
+apt-get install ping -y
+apt-get install iputils-ping -y
 ```
 
 ## beaker install (ubuntu)
@@ -23,8 +34,6 @@ sudo apt-get install -y ruby-dev libxml2-dev libxslt1-dev g++ zlib1g-dev bundler
 git clone https://github.com/puppetlabs/beaker
 cd beaker
 sudo bundle install
-
-<!-- ubuntu beaker install -->
 ```
 
 ## docker install (ubuntu)
@@ -41,16 +50,12 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 service docker start
 systemctl enable docker.service
 systemctl enable containerd.service
-
-<!-- ubuntu docker install -->
 ```
 
 ## git install (ubuntu)
 ```no-highlight
 apt-get update
 apt-get install -y git
-
-<!-- ubuntu git install -->
 ```
 
 ## go install (ubuntu)
@@ -65,8 +70,6 @@ go version
 ```no-highlight
 apt-get update
 apt-get install -y iputils-ping
-
-<!-- ubuntu ping install -->
 ```
 
 ## pdk install (ubuntu)
@@ -76,8 +79,6 @@ sudo dpkg -i puppet-tools-release-jammy.deb
 sudo apt-get -y update
 sudo apt-get install -y pdk
 rm puppet-tools-release-jammy.deb
-
-<!-- ubuntu pdk install -->
 ```
 0
 ## python3-pip install (ubuntu)
@@ -86,8 +87,6 @@ apt-get update
 apt-get -y upgrade
 apt-get install -y python3-pip
 apt-get install -y apt-utils build-essential libssl-dev libffi-dev python3-dev
-
-<!-- ubuntu python3 pip install -->
 ```
 
 ## terraform install (ubuntu)
@@ -99,14 +98,10 @@ install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/
 apt-add-repository -y "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 apt-get update
 apt-get install terraform
-
-<!-- ubuntu terraform install -->
 ```
 
 ## tree install (ubuntu)
 ```no-highlight
 apt-get update
 apt-get install -y tree
-
-<!-- ubuntu tree install -->
 ```

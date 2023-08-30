@@ -50,6 +50,10 @@ plugins:
       index_weight: -10
       warning: true
       reverse: false
+  - git-committers:
+      repository: jajera/mkdocs
+      branch: main
+  - git-authors:
   # - tags:
   #     tags_pages_compare: !!python/name:material.plugins.tags.page_title
 

@@ -1,8 +1,9 @@
 ## configure ssh authentication (git)
 ```no-highlight
-ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_git_$(date +%Y-%m-%d) -C "ssh key for git"
+ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_github -C "ssh key for github"
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519_github_$(date +%Y-%m-%d)
+ssh-add ~/.ssh/ssh key for github
+ssh-keyscan github.com >> ~/.ssh/known_hosts
 configure git app side
 ```
 

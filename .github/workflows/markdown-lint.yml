@@ -1,10 +1,12 @@
-name: linter
+name: markdown-lint
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: [main]
 permissions:
+  statuses: write
+  checks: write
   contents: write
+  pull-requests: read
 jobs:
   lint-changelog:
     name: Lint changelog file

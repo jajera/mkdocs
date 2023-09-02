@@ -1,0 +1,19 @@
+name: conformance-check
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  statuses: write
+  checks: write
+  contents: write
+  pull-requests: read
+jobs:
+  conform-changelog:
+    name: Conform changelog file
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Conform Action
+      uses: docker://autonomy/conform:v0.1.0-alpha.20

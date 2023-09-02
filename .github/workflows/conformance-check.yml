@@ -8,12 +8,5 @@ permissions:
   contents: write
   pull-requests: read
 jobs:
-  conform-changelog:
-    name: Conform changelog file
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Conform Action
-      uses: docker://autonomy/conform:v0.1.0-alpha.20
+  conform:
+    uses: GeoNet/Actions/.github/workflows/reusable-policy-conformance.yml@main

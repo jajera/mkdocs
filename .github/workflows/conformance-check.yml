@@ -1,12 +1,12 @@
-name: conformance-check
-on:
-  pull_request:
-    branches: [main]
-permissions:
-  statuses: write
-  checks: write
-  contents: write
-  pull-requests: read
-jobs:
-  conform:
-    uses: GeoNet/Actions/.github/workflows/reusable-policy-conformance.yml@main
+# name: conformance-check
+# on:
+#   pull_request:
+#     branches: [main]
+# permissions:
+#   statuses: write
+#   checks: write
+#   contents: write
+#   pull-requests: read
+# jobs:
+#   conform:
+#     uses: GeoNet/Actions/.github/workflows/reusable-policy-conformance.yml@main

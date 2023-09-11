@@ -29,9 +29,19 @@ systemctl enable docker
 dnf install -y htop
 ```
 
+## make install (redhat)
+```no-highlight
+yum install -y make
+```
+
 ## netstat install (redhat)
 ```no-highlight
 dnf install -y net-tools
+```
+
+## network-scripts install as required for ifup/ifdown command (redhat)
+```
+sudo dnf install -y network-scripts
 ```
 
 ## powershell install (redhat 7)
@@ -53,11 +63,6 @@ pwsh
 sudo dnf upgrade powershell
 ```
 
-## make install (redhat)
-```no-highlight
-yum install -y make
-```
-
 ## subscription (redhat)
 ```no-highlight
 subscription-manager config --list
@@ -65,6 +70,38 @@ subscription-manager register
 subscription-manager refresh
 subscription-manager attach --auto
 subscription-manager list --available --all
+```
+
+## set network ip addreess alias to a nic (redhat)
+Assuming there's only one nic
+- this directory will have one config file and if it maybe ifcfg-eth0.
+- create one file for each alias, it would like this below if you need two aliases.
+
+```no-highlight
+# tree /etc/sysconfig/network-scripts
+/etc/sysconfig/network-scripts
+├── ifcfg-eth0
+├── ifcfg-eth0:0
+└── ifcfg-eth0:1
+```
+- each new config file would look like this.
+
+```no-highlight
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0:0
+DEVICE=eth0:0
+ONBOOT=yes
+ONPARENT=yes
+IPADDR=192.168.122.100
+NETMASK=255.255.255.0
+```
+
+```no-highlight
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0:1
+DEVICE=eth0:1
+ONBOOT=yes
+ONPARENT=yes
+IPADDR=192.168.123.100
+NETMASK=255.255.255.0
 ```
 
 ## sync time with an ntp server (redhat)

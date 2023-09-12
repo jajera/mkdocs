@@ -7,6 +7,16 @@ ssh-keyscan github.com >> ~/.ssh/known_hosts
 configure git app side
 ```
 
+## delete local branch (git)
+```no-highlight
+git branch -d <BRANCH>
+```
+
+## delete remote branch (git)
+```no-highlight
+git push origin -d <BRANCH>
+```
+
 ## disable ssl verification (git)
 ```no-highlight
 git config http.sslVerify false

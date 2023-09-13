@@ -89,7 +89,7 @@ sudo apt-get -y update
 sudo apt-get install -y pdk
 rm puppet-tools-release-jammy.deb
 ```
-0
+
 ## python3-pip install (ubuntu)
 
 ```no-highlight

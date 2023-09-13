@@ -1,4 +1,5 @@
 ## swarm create service (docker)
+
 ```no-highlight
 docker service create --name webserver --replicas 1 nginx
 ```

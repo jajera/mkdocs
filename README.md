@@ -17,22 +17,26 @@ python3 -m  pip install \
 ```
 
 ## Create new project
+
 ```
 python3 -m mkdocs new mkdocs
 cd mkdocs
 ```
 
 ## Preview page on development server
+
 ```
 python3 -m mkdocs serve
 ```
 
 ## Build page
+
 ```
 python3 -m mkdocs build
 ```
 
 ## Deploy page to github
+
 ```
 python3 -m mkdocs gh-deploy
 ```

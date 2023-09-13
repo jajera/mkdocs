@@ -6,4 +6,5 @@ Host github.com
    IdentityFile ~/.ssh/id_ed25519_github
    IdentitiesOnly yes
 ```
+
 git c

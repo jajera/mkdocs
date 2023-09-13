@@ -95,6 +95,7 @@ Assuming there's only one nic
 ├── ifcfg-eth0:0
 └── ifcfg-eth0:1
 ```
+
 - each new config file would look like this.
 
 ```no-highlight

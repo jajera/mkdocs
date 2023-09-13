@@ -2,7 +2,12 @@ name: markdown-lint
 on:
   push:
     branches:
-      - main
+      - '*'
+      - '!gh-pages'
+  pull_request:
+    branches:
+      - '*'
+      - '!gh-pages'
 permissions:
   statuses: write
   checks: write

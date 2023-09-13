@@ -1,4 +1,5 @@
 ## azure
+
 ```no-highlight
 az vm extension image list --location southeastasia -o table
 

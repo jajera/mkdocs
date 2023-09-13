@@ -31,6 +31,10 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
 
 plugins:
   - include_dir_to_nav:
@@ -55,10 +59,6 @@ plugins:
       repository: jajera/mkdocs
       branch: main
   - git-authors:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   # - tags:
   #     tags_pages_compare: !!python/name:material.plugins.tags.page_title
 

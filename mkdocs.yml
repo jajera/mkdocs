@@ -82,4 +82,5 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Snippet: snippet
   - Wiki: wiki

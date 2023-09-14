@@ -1,6 +1,6 @@
 ## lookup using specific dns (dig)
 
-``` sh
+``` bash
 dig @localhost google.com
 dig @dns.domain.local google.com
 ```

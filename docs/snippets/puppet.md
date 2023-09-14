@@ -1,49 +1,33 @@
-## clean node certificate (puppet)
-
-```no-highlight
+``` bash title="puppet clean node certificate"
 puppet node purge
 puppet ssl clean
 puppet agent -t
 ```
 
-## delete node certificate (puppet)
-
-```no-highlight
+``` bash title="puppet delete node certificate"
 puppetserver ca clean --certname node1.example.local
 ```
 
-## execute specific class (puppet)
-
-```no-highlight
+``` bash title="puppet execute specific class"
 /opt/puppetlabs/bin/puppet apply -t --tags Some::class
 ```
 
-## facter list facts (puppet)
-
-```no-highlight
+``` bash title="puppet facter list facts"
 facter
 ```
 
-## facts (puppet)
-
-```no-highlight
+``` bash title="puppet facts"
 sudo /opt/puppetlabs/bin/puppet facts
 ```
 
-## print config (puppet)
-
-```no-highlight
+``` bash title="puppet print config"
 /opt/puppetlabs/bin/puppet config print
 ```
 
-## purging node (puppet)
-
-```no-highlight
+``` bash title="puppet purge node"
 puppet node purge node1.example.local
 ```
 
-## run agent (puppet)
-
-```no-highlight
+``` bash title="puppet run agent"
 sudo /opt/puppetlabs/bin/puppet agent --test
 ```

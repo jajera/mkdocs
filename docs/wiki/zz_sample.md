@@ -1,4 +1,7 @@
-## lookup using specific dns (dig)
+---
+search:
+  exclude: true
+---
 
 ``` bash
 dig @localhost google.com

@@ -24,7 +24,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets
-  - pymdownx.exclude
+  # - pymdownx.exclude
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -44,9 +44,9 @@ plugins:
       sort_directory: true
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - exclude:
-      glob:
-        - wiki/zz_sample.md
+  # - exclude:
+  #     glob:
+  #       - wiki/zz_sample.md
   - minify:
       minify_html: true
   - git-revision-date-localized:

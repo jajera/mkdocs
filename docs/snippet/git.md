@@ -30,3 +30,10 @@ git add --all; git commit -m 'fix .gitignore'; git push
 ``` bash title="git update new token"
 git remote set-url origin https://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@github.com/<username>/<repo>.git
 ```
+
+``` bash title="git merge changes from a target to desired branch"
+git checkout develop
+git merge feature_login # (1)
+```
+
+1.  :man_raising_hand: Ensure you are in the target branch first by checking it out.

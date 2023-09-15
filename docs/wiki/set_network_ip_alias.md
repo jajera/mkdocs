@@ -1,4 +1,4 @@
-## set network ip addreess alias to a nic (redhat)
+## set network ip address alias to a nic (redhat)
 
 Assuming there's only one nic
 

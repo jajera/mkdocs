@@ -31,6 +31,7 @@ jobs:
             mkdocs-awesome-pages-plugin \
             mkdocs-nav-weight \
             mkdocs-git-authors-plugin \
+            mkdocs-exclude-search \
             mkdocs-material
 
       - run: mkdocs gh-deploy --force

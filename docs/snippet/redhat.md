@@ -72,3 +72,11 @@ sudo ntpdate -q nz.pool.ntp.org
 yum update
 yum install -y open-vm-tools perl
 ```
+
+``` bash title="redhat 8 chronyc sync time"
+sudo chronyc tracking
+```
+
+``` bash title="redhat 7 ntpstat sync time"
+sudo ntpstat
+```

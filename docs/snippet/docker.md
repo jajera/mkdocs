@@ -1,3 +1,7 @@
+``` bash title="docker logs watch"
+watch 'sudo docker ps --format "{{.Names}}" | sort | xargs --verbose --max-args=1 -- sudo docker logs --tail=8 --timestamps'
+```
+
 ``` bash title="docker swarm create service"
 docker service create --name webserver --replicas 1 nginx
 ```

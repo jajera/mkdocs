@@ -24,11 +24,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.snippets
-<<<<<<< HEAD
-#   - pymdownx.exclude
-=======
   # - pymdownx.exclude
->>>>>>> 2ea2e13 (chore: content update)
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -48,15 +44,9 @@ plugins:
       sort_directory: true
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-<<<<<<< HEAD
-  - exclude-search:
-      exclude:
-        - wiki/zz_sample.md
-=======
   # - exclude:
   #     glob:
   #       - wiki/zz_sample.md
->>>>>>> 2ea2e13 (chore: content update)
   - minify:
       minify_html: true
   - git-revision-date-localized:

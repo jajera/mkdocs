@@ -1,9 +1,13 @@
-``` bash title="git configure ssh authentication"
+``` bash title="git configure ssh authentication (*nix)"
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519_github -C "ssh key for github"
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/ssh key for github
+ssh-add ~/.ssh/id_ed25519_github
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 configure git app side
+```
+
+``` title="git configure ssh authentication (windows)"
+follow the same process with *nix but do ensure you use `git bash` to perform the steps
 ```
 
 ``` bash title="git delete local branch"

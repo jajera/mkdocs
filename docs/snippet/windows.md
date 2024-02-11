@@ -1,5 +1,7 @@
 ```powershell title="windows openssh ssh client install"
 Add-WindowsCapability -Online -Name OpenSSH.Client # (1)
+Get-Service ssh-agent | Set-Service -StartupType Automatic
+Start-Service ssh-agent
 ```
 
 ```powershell title="windows openssh ssh server install"

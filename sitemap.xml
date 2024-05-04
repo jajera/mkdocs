@@ -2,117 +2,117 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jajera.github.io/mkdocs/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/aws/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/azure/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/dig/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/docker/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/fedora/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/firewall-cmd/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/git/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/packer/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/powershell/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/puppet_cli/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/puppet_code/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/redhat/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/shell/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/ssh/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/ubuntu/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/snippet/windows/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/reset_firewalld/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/set_network_ip_alias/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/shell/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/ssh/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/windows/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jajera.github.io/mkdocs/wiki/zz_sample/</loc>
-         <lastmod>2024-02-11</lastmod>
+         <lastmod>2024-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

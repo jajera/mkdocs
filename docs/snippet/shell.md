@@ -36,3 +36,11 @@ or
 
 netstat -r -n
 ```
+
+``` bash title="shell gh run delete"
+ACTION_FILE="pdk.yaml"
+FORKS_COUNT=15
+WORKFLOW_RUN_TO_DELETE=50
+gh run list --json databaseId  -q '.[].databaseId' -w $ACTION_FILE --limit $WORKFLOW_RUN_TO_DELETE | \
+xargs -IID -P $FORKS_COUNT gh api "repos/$(gh repo view --json nameWithOwner -q .nameWithOwner)/actions/runs/ID" -X DELETE
+```

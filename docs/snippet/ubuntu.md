@@ -33,18 +33,20 @@ sudo bundle install
 ```
 
 ```bash title="ubuntu docker install"
-apt-get update
-apt-get install ca-certificates curl gnupg lsb-release software-properties-common
-mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-apt-get update
-apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
-service docker start
-systemctl enable docker.service
-systemctl enable containerd.service
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+sudo echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo service docker start
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 ```
 
 ```bash title="ubuntu git install"
@@ -91,9 +93,9 @@ apt-get install -y python3-pip
 apt-get install -y apt-utils build-essential libssl-dev libffi-dev python3-dev
 ```
 
-```bash title="ubuntu ssh install"  # (1)
+```bash title="ubuntu ssh install"
 apt-get update
-apt-get install -y openssh-server
+apt-get install -y openssh-server  # (1)
 ```
 
 1.  :man_raising_hand: Allows ssh connection to the server.
